@@ -1,0 +1,14 @@
+.food-display-desc{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.food-display-desc h2{
+    font-size: 3rem;
+    color: orangered;
+    font-family:'Times New Roman', Times, serif;
+}
+.food-display{
+    width: 85%;
+    margin: auto;
+}

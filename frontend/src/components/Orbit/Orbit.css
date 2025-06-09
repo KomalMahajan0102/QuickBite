@@ -1,0 +1,154 @@
+/* ---------- Container for the orbiting circles animation ---------- */
+#circle-orbit-container {
+    position: relative;
+    top: 25px;
+    left: 25px;
+    height: 500px;
+    width: 500px;
+  }
+  
+  /* ---------- Inner orbit - This is the circles closest to the central point ---------- */
+  #inner-orbit {
+    position: absolute;
+    top: 145px;
+    left: 145px;
+    height: 280px;   
+    border-radius: 100%;
+    -webkit-animation: spin-right 10s linear infinite;
+    animation: spin-right 10s linear infinite;
+  }
+  
+  /* ---------- Repeating styles for the inner orbiting circles ---------- */
+ 
+  
+  /* ---------- Middle orbit - This is the circles second closest to the central point ---------- */
+  #middle-orbit {
+    position: absolute;
+    top: 135px;
+    left: 135px;
+    width: 300px;
+    height: 300px;
+    border: 2px #4A437F dashed;
+    border-radius: 100%;
+    -webkit-animation: spin-right 15s linear infinite;
+    animation: spin-right 15s linear infinite;
+  }
+  
+  /* ---------- Repeating styles for the inner orbiting circles ---------- */
+  .middle-orbit-cirlces {
+    position: absolute;
+    top: 25px;
+    left: 17px;
+    height: 20px;
+    width: 20px;
+    border-radius: 100%;
+    background-color: #4A437F;
+  }
+  
+  /* ---------- Outer orbit - This is the circles furthest away from the central point ---------- */
+  #outer-orbit {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 570px;
+    height: 570px;
+    border: 2px #4A437F dashed;
+    border-radius: 100%;
+    -webkit-animation: spin-right 20s linear infinite;
+    animation: spin-right 20s linear infinite;
+  }
+  
+  /* ---------- Repeating styles for the outer orbiting circles ---------- */
+  .outer-orbit-cirlce-1 {
+    position: absolute;
+    top: -135px;
+    left: 125px;
+    height: 230px;
+    
+    border-radius: 100%;
+    
+  }
+  .outer-orbit-cirlce-2 {
+    position: absolute;
+    /* top: -45px; */
+    left: 480px;
+    bottom: 100px;
+    height: 130px;
+    
+    border-radius: 100%;
+    
+  }
+  .outer-orbit-cirlce-3 {
+    position: absolute;
+    top: 300px;
+    left: -100px;
+    
+    height: 200px;
+    
+    border-radius: 100%;
+    
+  }
+  
+  /* ---------- Animation ---------- */
+  @-webkit-keyframes spin-right {
+    100% {
+      -webkit-transform: rotate(360deg);
+      -moz-transform: rotate(360deg);
+      -ms-transform: rotate(360deg);
+      -o-transform: rotate(360deg);
+      transform: rotate(360deg);
+    }
+  }
+  .orbit{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    width: 90%;
+    margin: 0rem auto;
+    justify-content: space-between;
+    
+  }
+  .orbit .desc{
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 30rem;
+    justify-content: center;
+    gap:20px
+    
+  }
+  .orbit .desc h4{
+    color: tomato;
+  }
+  .orbit .desc h1{
+    font-size: 3.9rem;
+    font-weight: 700;
+    color: rgba(0, 0, 0, 0.7);
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  .orbit .desc h2{
+    color: rgba(0, 0, 0, 0.6);
+    font-weight: 470;
+  }
+  .orbit .desc p{
+    color: rgba(0, 0, 0, 0.5);
+    
+  }
+  .orbit .desc div{
+    width: 35%;
+    background-color: tomato;
+    color: aliceblue;
+    font-size: 20px;
+    transform: skewX(15deg);
+    padding: 6px 10px;
+    text-align: center;
+    border-radius: 5px;
+    box-shadow: 5px 8px 0px 0px rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.orbit .desc div button{
+    transform: skewX(-15deg);
+    border: none;
+    background-color: tomato;
+    color: aliceblue;
+    font-size: 1.5rem;
+}

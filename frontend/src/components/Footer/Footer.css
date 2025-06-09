@@ -1,0 +1,54 @@
+.footer{
+    margin-top: 8rem;
+    display: flex;   
+    width: 100%;
+    background-color: rgba(2, 2, 2, 0.3);
+    color: aliceblue;
+    position: relative;
+    bottom: 0px;
+    padding: 3rem 2rem;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    
+}
+.footer-desc{
+    display: flex;
+    width: 80%;
+    justify-content: space-evenly;
+    margin: auto;
+    
+
+}
+.contact ,.info ,.support{
+    display: flex;
+    flex-direction: column;
+    gap:15px;
+    
+}
+.contact div{
+    display: flex;
+    gap: 6px;
+    align-items: center;
+}
+
+.logo{
+    display: flex;
+    
+    align-self: center;
+    margin: 0px auto;
+    flex-direction: column;
+    gap:2rem;
+}
+.logo .brand-name{
+    font-weight: 600;
+    font-size: 1.8rem;
+    color: tomato;
+    opacity: 0.8;
+    
+}
+.logo .icons{
+    display: flex;
+    gap:1.2rem;
+    font-size: 1.2rem;
+    
+}

@@ -1,0 +1,153 @@
+.MenuHeader{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    width: 80%;
+    margin: 0px auto;
+    
+    justify-content: space-between;
+    
+}
+.MenuHeader-desc{
+    display: flex;
+    flex-direction: column;
+    color: aliceblue;
+    gap:1.5rem;
+    width:40%
+}
+.m{
+    display: flex;
+}
+.MenuHeader-desc .Shwarma{
+    font-size: 7rem;
+    position: relative;
+    left:-330px;
+    
+    animation-name: shwarmaforward;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    color: tomato;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.MenuHeader-desc .Kabab{
+    font-size: 7rem;
+    position: relative;
+    /* position: relative;
+    top:-100px; */
+    left:-1500px;
+    animation-name: Kababforward;
+    animation-duration: 8s;
+    animation-timing-function: linear;
+    color: tomato;
+    animation-iteration-count: infinite;
+    
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.MenuHeader-desc h2{
+    font-weight: 200;
+    font-size: 4rem;
+    /* color: rgba(0,0,0,0.8); */
+    color: aliceblue;
+    
+}
+.MenuHeader-desc p{
+    /* color: rgba(0, 0, 0, 0.6); */
+    color: aliceblue;
+}
+.MenuHeader-buttons{
+    display: flex;
+    gap: 3rem;
+}
+
+.MenuHeader-buttons div{
+    width: 35%;
+    background-color: rgb(87, 87, 87);
+    color: aliceblue;
+    font-size: 20px;
+    transform: skewX(15deg);
+    padding: 6px 10px;
+    text-align: center;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.MenuHeader-buttons  div button{
+    transform: skewX(-15deg);
+    border: none;
+    background-color: rgb(87, 87, 87);
+    color: aliceblue;
+    font-size: 1.5rem;
+}
+.MenuHeader-buttons .contact,.MenuHeader-buttons .contact button{
+    background-color: tomato;
+}
+.circle{
+    z-index: 1;
+}
+.MenuHeader-image{
+   position: relative;
+}
+.MenuHeader-image .chicken{
+    position: absolute;
+    left:-2rem;
+    top:-4rem;
+    height: 20rem;
+    width: 20rem;
+    z-index: 8;
+   
+}
+.MenuHeader-image .veg{
+    position: absolute;
+    right:0rem;
+    top:13rem;
+    height: 11rem;
+    width: 13.5rem;
+    z-index:8;
+    
+}
+.shwarma{
+    position: absolute;
+    left: -100px
+}
+@keyframes shwarmaforward {
+    0% {left:-330px}
+    50% {left:-2000px}
+}
+@keyframes Kababforward {
+    0% {left:-1500px}
+    50% {left:0px}
+}
+.kabab-img{
+    height: 500px;
+   
+    position: relative;    
+    right:-1500px;
+    animation-name: Kababimgforward;
+    animation-duration: 8s;
+    animation-timing-function: linear;
+    color: tomato;
+    animation-iteration-count: infinite;
+   
+}
+.shwarma-img{
+    position: relative;
+    height: 500px;
+    right:-250px;
+    animation-name: shwarmaimgforward;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+.m-img{
+    display: flex;
+    
+}
+@keyframes shwarmaimgforward {
+    0% {right:-250px}
+    50% {right:-2000px}
+}
+@keyframes Kababimgforward {
+    0% {right:-1500px}
+    50% {right:300px}
+}
