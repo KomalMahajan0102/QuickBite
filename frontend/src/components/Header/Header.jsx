@@ -51,7 +51,7 @@ function Header({ setShowLogin }) {
 
                         </Nav>
                         <Nav className='d-flex'>
-                            <a href="https://cafe-unknown.vercel.app/">
+                            <a href="https://pairup-csk-quickbite.onrender.com">
                                 <button className="cookai-gradient" >PairUp</button>
                             </a>
 
