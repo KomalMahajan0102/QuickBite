@@ -6,7 +6,7 @@ import "leaflet-routing-machine";
 import "leaflet/dist/leaflet.css";
 
 import { useEffect } from 'react';
-const socket = io("http://localhost:4000");
+const socket = io("https://quickbite-api-jq60.onrender.com");
 function Map() {
     useEffect(() => {
  const map = L.map("map").setView([18.4574, 73.8522], 16);
