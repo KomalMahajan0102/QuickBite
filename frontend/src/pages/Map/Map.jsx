@@ -16,11 +16,7 @@ function Map() {
             attribution: '&copy; OpenStreetMap contributors'
         }).addTo(map);
 
-        // CSK restaurant marker
-        const cskCoords = [18.457441542558715, 73.85220782204955];
-        L.marker(cskCoords).addTo(map).bindPopup("CSK Restaurant").openPopup();
-
-        // Create custom red icon for user
+          // Create custom red icon for user
         const redIcon = new L.Icon({
         iconUrl: "https://unpkg.com/leaflet@1.7.1/dist/images/marker-icon.png",
         shadowUrl: "https://unpkg.com/leaflet@1.7.1/dist/images/marker-shadow.png",
@@ -29,6 +25,12 @@ function Map() {
         popupAnchor: [1, -34],
        shadowSize: [41, 41],
        });
+
+        // CSK restaurant marker
+        const cskCoords = [18.457441542558715, 73.85220782204955];
+        L.marker(cskCoords,{ icon: redIcon } ).addTo(map).bindPopup("CSK Restaurant").openPopup();
+
+      
 
         let userMarker = null;
         let routeControl = null;
