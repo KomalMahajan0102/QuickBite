@@ -22,11 +22,13 @@ function Map() {
 
         // Create custom red icon for user
         const redIcon = new L.Icon({
-            iconUrl: "https://chart.googleapis.com/chart?chst=d_map_pin_letter&chld=%E2%80%A2|FF0000",
-            iconSize: [21, 34],
-            iconAnchor: [10, 34],
-            popupAnchor: [0, -34],
-        });
+        iconUrl: "https://unpkg.com/leaflet@1.7.1/dist/images/marker-icon.png",
+        shadowUrl: "https://unpkg.com/leaflet@1.7.1/dist/images/marker-shadow.png",
+        iconSize: [25, 41],
+        iconAnchor: [12, 41],
+        popupAnchor: [1, -34],
+       shadowSize: [41, 41],
+       });
 
         let userMarker = null;
         let routeControl = null;
@@ -43,7 +45,7 @@ function Map() {
                     if (userMarker) {
                         userMarker.setLatLng(userLatLng);
                     } else {
-                        userMarker = L.marker(userLatLng, )
+                        userMarker = L.marker(userLatLng,{ icon: redIcon } )
                             .addTo(map)
                             .bindPopup("You are here")
                             .openPopup();
