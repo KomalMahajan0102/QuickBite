@@ -14,4 +14,4 @@ export const assets ={
     parcel_icon
 }
 
-export const url = 'https://quickbite-api-jq60.onrender.com/'
+export const url = 'https://quickbite-api-jq60.onrender.com'
